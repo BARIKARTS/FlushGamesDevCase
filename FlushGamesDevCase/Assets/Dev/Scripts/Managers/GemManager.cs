@@ -27,7 +27,9 @@ public class GemManager : MonoBehaviour
             {
                 //gem info 
                 if (!gemInfo.ContainsKey(gem.gemName))
+                {
                     gemInfo.Add(gem.gemName, gem);
+                }
                 if (gem.rarityLevel == _rarity)//donen rarityLevel ile donen gemin rarity leveli ayniysa gecici listeye al
                 {
                     _rarityGems.Add(gem);
